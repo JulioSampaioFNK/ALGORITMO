@@ -1,0 +1,17 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 18/05/2022
+// Seção de Declarações 
+var
+i,tabuada,numero:inteiro
+inicio
+// Seção de Comandos 
+escreval("digite qual tabuada você deseja?")
+leia (tabuada)
+escreval("digite até qual numero")
+leia (numero)
+para i de 1 ate numero faca
+escreval(i,"x", tabuada,"=", i*tabuada)
+fimpara
+fimalgoritmo
