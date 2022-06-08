@@ -1,0 +1,32 @@
+var
+j, k, vb:inteiro
+v:vetor[1..10] de inteiro
+achou:logico
+
+procedimento preenchevetor
+var j:inteiro
+inicio
+para j de 1 ate 10 faca
+v[j] <- randi(100)
+escreval (j:5, v[j]:5)
+fimpara
+fimprocedimento
+
+inicio
+preenchevetor
+escreva("entre com o valor de busca (ESC termina) :")
+leia (vb)
+j <- 1
+repita
+      se v[j] = vb entao
+         achou <- verdadeiro
+      senao
+           J <- j+1
+      fimse
+ate (achou=verdadeiro) ou (j>10)
+se achou entao
+   escreval("Achei", vb, "na posição", j)
+senao
+     escreval("Não achei")
+fimse
+fimalgoritmo
